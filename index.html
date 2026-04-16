@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixMate - Trusted Home Services Near You</title>
+    <meta name="description" content="Professional Plumber, Electrician, AC Repair, Cleaning and more. Fast, reliable, and affordable home services in your city.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/components.css">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i data-lucide="wrench"></i> Fix<span>Mate</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="cities.html">Cities</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Book Now</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Toggle CSS Fix -->
+    <style>
+        @media (max-width: 768px) {
+            .nav-links.show {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                padding: var(--space-4);
+                box-shadow: var(--shadow-md);
+                border-top: 1px solid var(--color-border);
+            }
+        }
+    </style>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Trusted Home Services Near You</h1>
+                <p class="hero-subtitle">Plumber, Electrician, AC Repair & More — Fast and Reliable.</p>
+                
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">Book Now</a>
+                    <a href="tel:+1234567890" class="btn btn-outline btn-large"><i data-lucide="phone"></i> Call Now</a>
+                </div>
+
+                <form class="quick-select-card" action="contact.html" method="GET">
+                    <select name="service" required>
+                        <option value="" disabled selected>Select Service</option>
+                        <option value="plumbing">Plumbing</option>
+                        <option value="electrician">Electrician</option>
+                        <option value="ac-repair">AC Repair</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="painting">Painting</option>
+                    </select>
+                    <select name="city" required>
+                        <option value="" disabled selected>Select City</option>
+                        <option value="gurgaon">Gurgaon</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="noida">Noida</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">Get Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Services Grid -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-8">Popular Services</h2>
+            <div class="grid grid-cols-4">
+                
+                <a href="services/plumbing.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto;">
+                        <i data-lucide="droplet"></i>
+                    </div>
+                    <h3 class="card-title">Plumbing</h3>
+                    <p class="card-text">Leaks, pipes, and fittings.</p>
+                </a>
+
+                <a href="services/electrician.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: #fffbeb; color: #d97706;">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 class="card-title">Electrician</h3>
+                    <p class="card-text">Wiring, inverters, and fixing.</p>
+                </a>
+
+                <a href="services/ac-repair.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: #f0fdfa; color: #0d9488;">
+                        <i data-lucide="wind"></i>
+                    </div>
+                    <h3 class="card-title">AC Repair</h3>
+                    <p class="card-text">Service, repair, and install.</p>
+                </a>
+
+                <a href="services/cleaning.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: #eff6ff; color: #3b82f6;">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3 class="card-title">Cleaning</h3>
+                    <p class="card-text">Deep home & sofa cleaning.</p>
+                </a>
+
+                <a href="services/carpenter.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: #fdf4ff; color: #c026d3;">
+                        <i data-lucide="hammer"></i>
+                    </div>
+                    <h3 class="card-title">Carpenter</h3>
+                    <p class="card-text">Furniture repair & assembly.</p>
+                </a>
+
+                <a href="services/painting.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: #fef2f2; color: #e11d48;">
+                        <i data-lucide="paint-roller"></i>
+                    </div>
+                    <h3 class="card-title">Painting</h3>
+                    <p class="card-text">Full house & touchups.</p>
+                </a>
+
+                <a href="services/ro-repair.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: #f0fdf4; color: #16a34a;">
+                        <i data-lucide="glass-water"></i>
+                    </div>
+                    <h3 class="card-title">RO Repair</h3>
+                    <p class="card-text">Water purifier service.</p>
+                </a>
+
+                <a href="services/appliance.html" class="card" style="text-align: center; text-decoration: none;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: #f5f3ff; color: #7c3aed;">
+                        <i data-lucide="tv"></i>
+                    </div>
+                    <h3 class="card-title">Appliance Repair</h3>
+                    <p class="card-text">Fridge, washing machine.</p>
+                </a>
+
+            </div>
+            <div class="text-center mt-4" style="margin-top: 3rem;">
+                <a href="services.html" class="btn btn-outline">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center mb-8">Why Choose FixMate?</h2>
+            <div class="grid grid-cols-4">
+                
+                <div class="icon-box">
+                    <div class="icon-box-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h4>Verified Professionals</h4>
+                    <p class="card-text">Background checked and highly skilled local experts.</p>
+                </div>
+
+                <div class="icon-box">
+                    <div class="icon-box-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <h4>Fast Response</h4>
+                    <p class="card-text">Quick booking and on-time service delivery.</p>
+                </div>
+
+                <div class="icon-box">
+                    <div class="icon-box-icon">
+                        <i data-lucide="tag"></i>
+                    </div>
+                    <h4>Affordable Pricing</h4>
+                    <p class="card-text">Transparent and fair pricing with no hidden charges.</p>
+                </div>
+
+                <div class="icon-box">
+                    <div class="icon-box-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h4>Quality Service</h4>
+                    <p class="card-text">We guarantee high-quality workmanship every time.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="mb-8">How It Works</h2>
+            <div class="grid grid-cols-3">
+                <div class="card" style="align-items: center; text-align: center; border: none; box-shadow: none;">
+                    <div style="font-size: 3rem; font-weight: 700; color: var(--color-primary-light); margin-bottom: 1rem;">1</div>
+                    <h4>Choose Service</h4>
+                    <p class="card-text">Select the help you need from our comprehensive list.</p>
+                </div>
+                <div class="card" style="align-items: center; text-align: center; border: none; box-shadow: none;">
+                    <div style="font-size: 3rem; font-weight: 700; color: var(--color-primary-light); margin-bottom: 1rem;">2</div>
+                    <h4>Contact Us</h4>
+                    <p class="card-text">Book easily online or give us a quick call/WhatsApp.</p>
+                </div>
+                <div class="card" style="align-items: center; text-align: center; border: none; box-shadow: none;">
+                    <div style="font-size: 3rem; font-weight: 700; color: var(--color-primary-light); margin-bottom: 1rem;">3</div>
+                    <h4>Get Expert Help</h4>
+                    <p class="card-text">Our professional arrives at your doorstep to fix it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center mb-8">What Our Customers Say</h2>
+            <div class="grid grid-cols-3">
+                
+                <div class="testimonial-card">
+                    <div style="color: #fbbf24; margin-bottom: 1rem;">
+                        <i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p class="testimonial-text">"The AC repair guy was on time and fixed the cooling issue within 30 minutes. Highly recommend FixMate!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem;">Rahul S.</h4>
+                            <span style="font-size: 0.875rem; color: var(--color-text-muted);">Gurgaon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div style="color: #fbbf24; margin-bottom: 1rem;">
+                        <i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p class="testimonial-text">"Needed an urgent plumber for a leaking pipe at night. They responded quickly and the charge was very fair."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem;">Priya M.</h4>
+                            <span style="font-size: 0.875rem; color: var(--color-text-muted);">Delhi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div style="color: #fbbf24; margin-bottom: 1rem;">
+                        <i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p class="testimonial-text">"Booked deep cleaning for my new flat. The team was professional, carried all equipment, and left the place sparkling."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem;">Amit V.</h4>
+                            <span style="font-size: 0.875rem; color: var(--color-text-muted);">Noida</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section" style="background-color: var(--color-primary); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: 1rem;">Need urgent help today?</h2>
+            <p style="color: var(--color-primary-light); font-size: 1.25rem; margin-bottom: 2rem;">Our experts are ready to assist you.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://wa.me/1234567890" class="btn btn-success btn-large"><i data-lucide="message-circle"></i> WhatsApp Now</a>
+                <a href="tel:+1234567890" class="btn btn-outline btn-large" style="color: white; border-color: white;"><i data-lucide="phone"></i> Call Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-4">
+                <div>
+                    <h3 style="color: white; display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="wrench"></i> FixMate</h3>
+                    <p>Your trusted partner for all home repair and maintenance needs.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul style="display:flex; flex-direction: column; gap: 0.5rem;">
+                        <li><a href="services/plumbing.html">Plumbing</a></li>
+                        <li><a href="services/electrician.html">Electrician</a></li>
+                        <li><a href="services/ac-repair.html">AC Repair</a></li>
+                        <li><a href="services/cleaning.html">Cleaning</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Cities</h4>
+                    <ul style="display:flex; flex-direction: column; gap: 0.5rem;">
+                        <li><a href="cities/gurgaon.html">Gurgaon</a></li>
+                        <li><a href="cities/delhi.html">Delhi</a></li>
+                        <li><a href="cities/noida.html">Noida</a></li>
+                        <li><a href="cities/faridabad.html">Faridabad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul style="display:flex; flex-direction: column; gap: 0.5rem;">
+                        <li><p><i data-lucide="phone"></i> +91 98765 43210</p></li>
+                        <li><p><i data-lucide="mail"></i> info@fixmate.in</p></li>
+                        <li><a href="contact.html">Contact Form</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 FixMate. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Call/WhatsApp Button -->
+    <div class="mobile-sticky-bar">
+        <div class="grid" style="grid-template-columns: 1fr 1fr;">
+            <a href="tel:+1234567890" class="btn btn-outline" style="width: 100%; border-color: var(--color-primary); color: var(--color-primary);"><i data-lucide="phone"></i> Call</a>
+            <a href="https://wa.me/1234567890" class="btn btn-success" style="width: 100%;"><i data-lucide="message-circle"></i> WhatsApp</a>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

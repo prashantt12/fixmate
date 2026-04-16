@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FixMate</title>
+    <meta name="description" content="Learn more about FixMate, your trusted home service provider committed to quality and reliability.">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/components.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i data-lucide="wrench"></i> Fix<span>Mate</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="cities.html">Cities</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Book Now</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section section-light" style="padding: var(--space-8) 0;">
+        <div class="container text-center" style="max-width: 800px;">
+            <h1>About FixMate</h1>
+            <p class="hero-subtitle">We are on a mission to organize the highly unorganized home services market by providing reliable, affordable, and high-quality services to every household.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="section">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: center;">
+                
+                <div>
+                    <h2>Our Mission</h2>
+                    <p>Finding a trusted plumber, electrician, or cleaner is traditionally a hassle. You ask around, negotiate rates, and often end up with subpar work. FixMate was built to solve exactly this.</p>
+                    <p>Our mission is to connect skilled, verified professionals with homeowners and renters who need immediate, high-quality assistance. We ensure that our pricing is transparent, our response is fast, and our work is guaranteed.</p>
+                    
+                    <h2 class="mt-4">Quality Commitment</h2>
+                    <ul style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+                        <li style="display:flex; align-items:start; gap:1rem;">
+                            <i data-lucide="shield-check" style="color:var(--color-primary); flex-shrink:0;"></i>
+                            <div>
+                                <strong>Vetted Professionals:</strong> Everyone on our platform goes through identity checks and skill validation.
+                            </div>
+                        </li>
+                        <li style="display:flex; align-items:start; gap:1rem;">
+                            <i data-lucide="piggy-bank" style="color:var(--color-primary); flex-shrink:0;"></i>
+                            <div>
+                                <strong>Price Standardization:</strong> Standardized visit charges and predefined service costs. No sudden overcharging.
+                            </div>
+                        </li>
+                        <li style="display:flex; align-items:start; gap:1rem;">
+                            <i data-lucide="badge-check" style="color:var(--color-primary); flex-shrink:0;"></i>
+                            <div>
+                                <strong>Service Guarantee:</strong> We stand by our work. If something goes wrong immediately after repair, we fix it at no extra cost.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background-color: var(--color-primary); color: white;">
+                    <h3 style="color: white; margin-bottom: 2rem;">Why FixMate Stands Out</h3>
+                    
+                    <div style="display:flex; flex-direction:column; gap:2rem;">
+                        <div style="display:flex; align-items:center; gap:1.5rem;">
+                            <div style="font-size:3rem; font-weight:700; color:var(--color-primary-light); line-height:1;">10k+</div>
+                            <div style="font-size:1.125rem;">Happy Families<br><span style="font-size:0.875rem; color:var(--color-primary-light);">Served successfully</span></div>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:1.5rem;">
+                            <div style="font-size:3rem; font-weight:700; color:var(--color-primary-light); line-height:1;">5+</div>
+                            <div style="font-size:1.125rem;">Cities<br><span style="font-size:0.875rem; color:var(--color-primary-light);">Active presence</span></div>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:1.5rem;">
+                            <div style="font-size:3rem; font-weight:700; color:var(--color-primary-light); line-height:1;">4.8</div>
+                            <div style="font-size:1.125rem;">Star Rating<br><span style="font-size:0.875rem; color:var(--color-primary-light);">Average user review</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-4">
+                <div>
+                    <h3 style="color: white; display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="wrench"></i> FixMate</h3>
+                    <p>Your trusted partner for all home repair and maintenance needs.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul style="display:flex; flex-direction: column; gap: 0.5rem;">
+                        <li><a href="services/plumbing.html">Plumbing</a></li>
+                        <li><a href="services/electrician.html">Electrician</a></li>
+                        <li><a href="services/ac-repair.html">AC Repair</a></li>
+                        <li><a href="services/cleaning.html">Cleaning</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Cities</h4>
+                    <ul style="display:flex; flex-direction: column; gap: 0.5rem;">
+                        <li><a href="cities/gurgaon.html">Gurgaon</a></li>
+                        <li><a href="cities/delhi.html">Delhi</a></li>
+                        <li><a href="cities/noida.html">Noida</a></li>
+                        <li><a href="cities/faridabad.html">Faridabad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul style="display:flex; flex-direction: column; gap: 0.5rem;">
+                        <li><p><i data-lucide="phone"></i> +91 98765 43210</p></li>
+                        <li><p><i data-lucide="mail"></i> info@fixmate.in</p></li>
+                        <li><a href="contact.html">Contact Form</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 FixMate. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Call/WhatsApp Button -->
+    <div class="mobile-sticky-bar">
+        <div class="grid" style="grid-template-columns: 1fr 1fr;">
+            <a href="tel:+1234567890" class="btn btn-outline" style="width: 100%; border-color: var(--color-primary); color: var(--color-primary);"><i data-lucide="phone"></i> Call</a>
+            <a href="https://wa.me/1234567890" class="btn btn-success" style="width: 100%;"><i data-lucide="message-circle"></i> WhatsApp</a>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

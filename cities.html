@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities We Serve - FixMate</title>
+    <meta name="description" content="FixMate provides reliable home services across multiple cities including Gurgaon, Delhi, and Noida.">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/components.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i data-lucide="wrench"></i> Fix<span>Mate</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="cities.html" class="active">Cities</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Book Now</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section section-light" style="padding: var(--space-8) 0;">
+        <div class="container text-center">
+            <h1>Cities We Serve</h1>
+            <p class="hero-subtitle">Bringing top-rated home services to your neighborhood.</p>
+        </div>
+    </section>
+
+    <!-- Cities Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-3">
+                
+                <div class="card" style="text-align:center;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: var(--color-surface); color: var(--color-text-heading);"><i data-lucide="map-pin"></i></div>
+                    <h3 class="card-title">Gurgaon</h3>
+                    <p class="card-text">All home services available across all sectors of Gurugram.</p>
+                    <a href="cities/gurgaon.html" class="btn btn-outline mt-4">View Services</a>
+                </div>
+
+                <div class="card" style="text-align:center;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: var(--color-surface); color: var(--color-text-heading);"><i data-lucide="map-pin"></i></div>
+                    <h3 class="card-title">Faridabad</h3>
+                    <p class="card-text">Expert plumbers, electricians and more serving Faridabad.</p>
+                    <a href="cities/faridabad.html" class="btn btn-outline mt-4">View Services</a>
+                </div>
+
+                <div class="card" style="text-align:center;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: var(--color-surface); color: var(--color-text-heading);"><i data-lucide="map-pin"></i></div>
+                    <h3 class="card-title">Panipat</h3>
+                    <p class="card-text">Reliable repair and home maintenance at your doorstep.</p>
+                    <a href="contact.html?city=panipat" class="btn btn-outline mt-4">View Services</a>
+                </div>
+
+                <div class="card" style="text-align:center;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: var(--color-surface); color: var(--color-text-heading);"><i data-lucide="map-pin"></i></div>
+                    <h3 class="card-title">Karnal</h3>
+                    <p class="card-text">Professional home assistance ready to serve Karnal.</p>
+                    <a href="contact.html?city=karnal" class="btn btn-outline mt-4">View Services</a>
+                </div>
+
+                <div class="card" style="text-align:center;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: var(--color-surface); color: var(--color-text-heading);"><i data-lucide="map-pin"></i></div>
+                    <h3 class="card-title">Rohtak</h3>
+                    <p class="card-text">Booking home services has never been easier in Rohtak.</p>
+                    <a href="contact.html?city=rohtak" class="btn btn-outline mt-4">View Services</a>
+                </div>
+
+                <div class="card" style="text-align:center;">
+                    <div class="card-icon" style="margin: 0 auto 1rem auto; background: var(--color-surface); color: var(--color-text-heading);"><i data-lucide="map-pin"></i></div>
+                    <h3 class="card-title">Delhi</h3>
+                    <p class="card-text">Serving standard zones across the national capital.</p>
+                    <a href="contact.html?city=delhi" class="btn btn-outline mt-4">View Services</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-4">
+                <div>
+                    <h3 style="color: white; display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="wrench"></i> FixMate</h3>
+                    <p>Your trusted partner for all home repair and maintenance needs.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul style="display:flex; flex-direction: column; gap: 0.5rem;">
+                        <li><a href="services/plumbing.html">Plumbing</a></li>
+                        <li><a href="services/electrician.html">Electrician</a></li>
+                        <li><a href="services/ac-repair.html">AC Repair</a></li>
+                        <li><a href="services/cleaning.html">Cleaning</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Cities</h4>
+                    <ul style="display:flex; flex-direction: column; gap: 0.5rem;">
+                        <li><a href="cities/gurgaon.html">Gurgaon</a></li>
+                        <li><a href="cities/delhi.html">Delhi</a></li>
+                        <li><a href="cities/noida.html">Noida</a></li>
+                        <li><a href="cities/faridabad.html">Faridabad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul style="display:flex; flex-direction: column; gap: 0.5rem;">
+                        <li><p><i data-lucide="phone"></i> +91 98765 43210</p></li>
+                        <li><p><i data-lucide="mail"></i> info@fixmate.in</p></li>
+                        <li><a href="contact.html">Contact Form</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 FixMate. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Call/WhatsApp Button -->
+    <div class="mobile-sticky-bar">
+        <div class="grid" style="grid-template-columns: 1fr 1fr;">
+            <a href="tel:+1234567890" class="btn btn-outline" style="width: 100%; border-color: var(--color-primary); color: var(--color-primary);"><i data-lucide="phone"></i> Call</a>
+            <a href="https://wa.me/1234567890" class="btn btn-success" style="width: 100%;"><i data-lucide="message-circle"></i> WhatsApp</a>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
